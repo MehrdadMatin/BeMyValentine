@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Question</title>
+    <link href="styles/tailwind.css" rel="stylesheet">
+    <link href="styles/custom.css" rel="stylesheet">
+</head>
+<body class="fade-in">
+    <div id="floating-hearts" class="floating-hearts"></div>
+
+    <!-- Debug Navigation -->
+    <div class="debug-nav">
+        <button onclick="window.location.href='page2.html'" class="debug-arrow">←</button>
+        <button onclick="window.location.href='index.html'" class="debug-arrow">→</button>
+    </div>
+
+    <div class="min-h-screen flex items-center justify-center px-4">
+        <div class="tinder-card">
+            <div class="card-content">
+                <div class="text-content">
+                    <h1 class="text-6xl md:text-7xl font-bold mb-8 font-playfair">Yay! Thank you! ❤️</h1>
+                    <p class="text-4xl md:text-5xl mb-12">I'm so excited to spend Valentine's Day with you!</p>
+                    <p class="text-3xl md:text-4xl mb-8">I promise to make it special 🌹</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            triggerConfetti();
+        });
+    </script>
+</body>
+</html>

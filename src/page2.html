@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Question</title>
+    <link href="styles/tailwind.css" rel="stylesheet">
+    <link href="styles/custom.css" rel="stylesheet">
+</head>
+<body class="fade-in">
+    <div id="floating-hearts" class="floating-hearts"></div>
+
+    <!-- Debug Navigation -->
+    <div class="debug-nav">
+        <button onclick="window.location.href='page1.html'" class="debug-arrow">←</button>
+        <button onclick="window.location.href='page3.html'" class="debug-arrow">→</button>
+    </div>
+
+    <div class="min-h-screen flex items-center justify-center px-4">
+        <div class="tinder-card">
+            <span class="corner-decoration">✿</span>
+            <div class="card-content">
+                <span class="corner-decoration corner-top-right">❋</span>
+                <span class="corner-decoration corner-bottom-left">❀</span>
+                <div class="text-content">
+                    <h1 class="text-6xl md:text-7xl font-bold mb-12 font-playfair">Will you be my Valentine?</h1>
+                </div>
+                <div class="button-container">
+                    <div class="yes-button-wrapper">
+                        <button 
+                            onclick="window.location.href='page3.html'"
+                            class="valentine-btn text-white px-12 py-6 rounded-full text-2xl font-semibold transform transition hover:scale-105 text-center">
+                            Yes, I'd love to! ❤️
+                        </button>
+                    </div>
+                    <div class="no-button-wrapper">
+                        <button 
+                            class="no-btn valentine-btn bg-white bg-opacity-20 backdrop-blur-sm text-white px-12 py-6 rounded-full text-2xl transition duration-300 text-center">
+                            No, thank you
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/confetti.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>

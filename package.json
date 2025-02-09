@@ -1,0 +1,26 @@
+{
+  "name": "vday",
+  "version": "1.0.0",
+  "description": "A web application to ask someone to be your Valentine's date.",
+  "main": "src/scripts/app.js",
+  "scripts": {
+    "build": "postcss src/styles/tailwind.css -o src/styles/output.css",
+    "start": "npm run build && live-server src"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.0",
+    "live-server": "^1.2.0",
+    "postcss": "^8.4.6",
+    "tailwindcss": "^2.2.19"
+  },
+  "devDependencies": {
+    "postcss-cli": "^8.3.1"
+  },
+  "keywords": [
+    "valentine",
+    "web",
+    "application"
+  ],
+  "author": "",
+  "license": "ISC"
+}
